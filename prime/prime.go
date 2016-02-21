@@ -6,17 +6,16 @@ import (
 )
 
 func main() {
-  var x float64 = 9.0
+  var x int = 28
   prime := true
   var out_string string = ""
-  for i := 0.0; i < x; i++ {
-    if math.Mod(x, i) == 0 {
+  for i := 2; i*i < x; i++ {
+    if math.Mod(float64(x), float64(i*i)) == 0 {
       prime = false
     }
   }
-  var y int = int(x)
   if prime == false {
     out_string = "not "
   }
-  fmt.Printf("%d is %sa prime number\n", y, out_string)
+  fmt.Printf("%d is %sa prime number\n", int(x), out_string)
 }
