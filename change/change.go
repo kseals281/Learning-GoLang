@@ -34,7 +34,7 @@ func getChange(amount float64) (lincoln, washington, quarters, dimes, nickels, p
 }
 
 func main() {
-  var amount float64 = 3.69
+  var amount float64 = 9.69
   lincoln, washington, quarters, dimes, nickels, pennies := getChange(amount)
   fmt.Printf("$%.2f can be separated into %d fives, %d singles, %d quarters, %d dimes, ",
              amount, lincoln, washington, quarters, dimes)
